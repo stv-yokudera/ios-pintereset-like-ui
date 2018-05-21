@@ -1,2 +1,2 @@
-# ios-pintereset-like-ui
+# ios-pinterest-like-ui
 Pinterest UI

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4hB-Kx-8a4">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Detail View Controller-->
+        <scene sceneID="YG3-uD-NQW">
+            <objects>
+                <viewController storyboardIdentifier="PhotoDetailViewController" id="4hB-Kx-8a4" customClass="PhotoDetailViewController" customModule="ios_pintereset_like_ui" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d1f-9B-I5T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E95-F7-geB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peF-Ji-Tg8">
+                                <rect key="frame" x="332" y="35" width="67" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="Hck-ij-JaT"/>
+                                    <constraint firstAttribute="height" constant="42" id="Wkl-xu-u1P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="　×　"/>
+                                <connections>
+                                    <action selector="didTapDissmiss:" destination="4hB-Kx-8a4" eventType="touchUpInside" id="sJ6-8W-Jt9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E95-F7-geB" firstAttribute="bottom" secondItem="HW1-it-DTh" secondAttribute="bottom" id="0O0-Rv-gZf"/>
+                            <constraint firstItem="E95-F7-geB" firstAttribute="trailing" secondItem="HW1-it-DTh" secondAttribute="trailing" id="IoT-N7-YtG"/>
+                            <constraint firstItem="HW1-it-DTh" firstAttribute="trailing" secondItem="peF-Ji-Tg8" secondAttribute="trailing" constant="15" id="XUq-JW-QDI"/>
+                            <constraint firstItem="E95-F7-geB" firstAttribute="top" secondItem="d1f-9B-I5T" secondAttribute="top" id="cas-Ln-UbT"/>
+                            <constraint firstItem="E95-F7-geB" firstAttribute="leading" secondItem="HW1-it-DTh" secondAttribute="leading" id="nY0-Ph-SVe"/>
+                            <constraint firstItem="peF-Ji-Tg8" firstAttribute="top" secondItem="HW1-it-DTh" secondAttribute="top" constant="15" id="xsD-df-rJ0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HW1-it-DTh"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="E95-F7-geB" id="Zpf-aD-RX8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgY-8P-53G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-171.01449275362319" y="204.61956521739131"/>
+        </scene>
+    </scenes>
+</document>

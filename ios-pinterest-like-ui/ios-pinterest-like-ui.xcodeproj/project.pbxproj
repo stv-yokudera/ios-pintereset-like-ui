@@ -28,16 +28,16 @@
 		B600770C20B387B800CABF38 /* PhotoListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60076F620B387B800CABF38 /* PhotoListProvider.swift */; };
 		B600770D20B387B800CABF38 /* PinterestCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60076F720B387B800CABF38 /* PinterestCollectionViewLayout.swift */; };
 		B600770E20B387B800CABF38 /* PhotoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60076F820B387B800CABF38 /* PhotoListCell.swift */; };
-		B600771920B38A8100CABF38 /* ios_pinterest_like_uiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B600771020B387C500CABF38 /* ios_pinterest_like_uiTests.swift */; };
+		B600773420B4780700CABF38 /* PhotoDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B600773320B4780700CABF38 /* PhotoDataSourceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B639660920AFAFD500A98FC5 /* PBXContainerItemProxy */ = {
+		B600772720B4774E00CABF38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B63965EC20AFAFD400A98FC5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B63965F320AFAFD400A98FC5;
-			remoteInfo = "ios-pintereset-like-ui";
+			remoteInfo = "ios-pinterest-like-ui";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -64,21 +64,21 @@
 		B60076F620B387B800CABF38 /* PhotoListProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListProvider.swift; sourceTree = "<group>"; };
 		B60076F720B387B800CABF38 /* PinterestCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestCollectionViewLayout.swift; sourceTree = "<group>"; };
 		B60076F820B387B800CABF38 /* PhotoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListCell.swift; sourceTree = "<group>"; };
-		B600771020B387C500CABF38 /* ios_pinterest_like_uiTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ios_pinterest_like_uiTests.swift; sourceTree = "<group>"; };
-		B600771120B387C500CABF38 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B600772220B4774E00CABF38 /* ios-pinterest-like-uiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-pinterest-like-uiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B600772E20B4777400CABF38 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B600773320B4780700CABF38 /* PhotoDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSourceTests.swift; sourceTree = "<group>"; };
 		B63965F420AFAFD400A98FC5 /* ios-pinterest-like-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-pinterest-like-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B639660820AFAFD500A98FC5 /* ios-pinterest-like-uiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-pinterest-like-uiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B63965F120AFAFD400A98FC5 /* Frameworks */ = {
+		B600771F20B4774E00CABF38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B639660520AFAFD500A98FC5 /* Frameworks */ = {
+		B63965F120AFAFD400A98FC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -173,20 +173,28 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		B600770F20B387C500CABF38 /* ios-pinterest-like-uiTests */ = {
+		B600772C20B4777400CABF38 /* ios-pinterest-like-uiTests */ = {
 			isa = PBXGroup;
 			children = (
-				B600771020B387C500CABF38 /* ios_pinterest_like_uiTests.swift */,
-				B600771120B387C500CABF38 /* Info.plist */,
+				B600773220B477FD00CABF38 /* Models */,
+				B600772E20B4777400CABF38 /* Info.plist */,
 			);
 			path = "ios-pinterest-like-uiTests";
+			sourceTree = "<group>";
+		};
+		B600773220B477FD00CABF38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B600773320B4780700CABF38 /* PhotoDataSourceTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B63965EB20AFAFD400A98FC5 = {
 			isa = PBXGroup;
 			children = (
 				B60076DA20B387B800CABF38 /* ios-pinterest-like-ui */,
-				B600770F20B387C500CABF38 /* ios-pinterest-like-uiTests */,
+				B600772C20B4777400CABF38 /* ios-pinterest-like-uiTests */,
 				B63965F520AFAFD400A98FC5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -195,7 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				B63965F420AFAFD400A98FC5 /* ios-pinterest-like-ui.app */,
-				B639660820AFAFD500A98FC5 /* ios-pinterest-like-uiTests.xctest */,
+				B600772220B4774E00CABF38 /* ios-pinterest-like-uiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,6 +211,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B600772120B4774E00CABF38 /* ios-pinterest-like-uiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B600772920B4774E00CABF38 /* Build configuration list for PBXNativeTarget "ios-pinterest-like-uiTests" */;
+			buildPhases = (
+				B600771E20B4774E00CABF38 /* Sources */,
+				B600771F20B4774E00CABF38 /* Frameworks */,
+				B600772020B4774E00CABF38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B600772820B4774E00CABF38 /* PBXTargetDependency */,
+			);
+			name = "ios-pinterest-like-uiTests";
+			productName = "ios-pinterest-like-uiTests";
+			productReference = B600772220B4774E00CABF38 /* ios-pinterest-like-uiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B63965F320AFAFD400A98FC5 /* ios-pinterest-like-ui */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B639661C20AFAFD600A98FC5 /* Build configuration list for PBXNativeTarget "ios-pinterest-like-ui" */;
@@ -220,24 +246,6 @@
 			productReference = B63965F420AFAFD400A98FC5 /* ios-pinterest-like-ui.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B639660720AFAFD500A98FC5 /* ios-pinterest-like-uiTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B639661F20AFAFD600A98FC5 /* Build configuration list for PBXNativeTarget "ios-pinterest-like-uiTests" */;
-			buildPhases = (
-				B639660420AFAFD500A98FC5 /* Sources */,
-				B639660520AFAFD500A98FC5 /* Frameworks */,
-				B639660620AFAFD500A98FC5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B639660A20AFAFD500A98FC5 /* PBXTargetDependency */,
-			);
-			name = "ios-pinterest-like-uiTests";
-			productName = "ios-pintereset-like-uiTests";
-			productReference = B639660820AFAFD500A98FC5 /* ios-pinterest-like-uiTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,12 +256,12 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = YukiOkudera;
 				TargetAttributes = {
-					B63965F320AFAFD400A98FC5 = {
-						CreatedOnToolsVersion = 9.3;
-					};
-					B639660720AFAFD500A98FC5 = {
+					B600772120B4774E00CABF38 = {
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = B63965F320AFAFD400A98FC5;
+					};
+					B63965F320AFAFD400A98FC5 = {
+						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
@@ -271,12 +279,19 @@
 			projectRoot = "";
 			targets = (
 				B63965F320AFAFD400A98FC5 /* ios-pinterest-like-ui */,
-				B639660720AFAFD500A98FC5 /* ios-pinterest-like-uiTests */,
+				B600772120B4774E00CABF38 /* ios-pinterest-like-uiTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B600772020B4774E00CABF38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B63965F220AFAFD400A98FC5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,16 +304,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B639660620AFAFD500A98FC5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B600771E20B4774E00CABF38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B600773420B4780700CABF38 /* PhotoDataSourceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B63965F020AFAFD400A98FC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,21 +338,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B639660420AFAFD500A98FC5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B600771920B38A8100CABF38 /* ios_pinterest_like_uiTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B639660A20AFAFD500A98FC5 /* PBXTargetDependency */ = {
+		B600772820B4774E00CABF38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B63965F320AFAFD400A98FC5 /* ios-pinterest-like-ui */;
-			targetProxy = B639660920AFAFD500A98FC5 /* PBXContainerItemProxy */;
+			targetProxy = B600772720B4774E00CABF38 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -352,6 +360,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B600772A20B4774E00CABF38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				INFOPLIST_FILE = "ios-pinterest-like-uiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.yuoku.ios-pinterest-like-uiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-pinterest-like-ui.app/ios-pinterest-like-ui";
+			};
+			name = Debug;
+		};
+		B600772B20B4774E00CABF38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				INFOPLIST_FILE = "ios-pinterest-like-uiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.yuoku.ios-pinterest-like-uiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-pinterest-like-ui.app/ios-pinterest-like-ui";
+			};
+			name = Release;
+		};
 		B639661A20AFAFD600A98FC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -502,51 +550,18 @@
 			};
 			name = Release;
 		};
-		B639662020AFAFD600A98FC5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B8PR34D6DP;
-				INFOPLIST_FILE = "ios-pinterest-like-uiTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.yuoku.ios-pinterest-like-uiTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-pinterest-like-ui.app/ios-pinterest-like-ui";
-			};
-			name = Debug;
-		};
-		B639662120AFAFD600A98FC5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B8PR34D6DP;
-				INFOPLIST_FILE = "ios-pinterest-like-uiTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.yuoku.ios-pinterest-like-uiTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-pinterest-like-ui.app/ios-pinterest-like-ui";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B600772920B4774E00CABF38 /* Build configuration list for PBXNativeTarget "ios-pinterest-like-uiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B600772A20B4774E00CABF38 /* Debug */,
+				B600772B20B4774E00CABF38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B63965EF20AFAFD400A98FC5 /* Build configuration list for PBXProject "ios-pinterest-like-ui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -561,15 +576,6 @@
 			buildConfigurations = (
 				B639661D20AFAFD600A98FC5 /* Debug */,
 				B639661E20AFAFD600A98FC5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B639661F20AFAFD600A98FC5 /* Build configuration list for PBXNativeTarget "ios-pinterest-like-uiTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B639662020AFAFD600A98FC5 /* Debug */,
-				B639662120AFAFD600A98FC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

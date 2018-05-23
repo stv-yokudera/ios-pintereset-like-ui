@@ -26,13 +26,14 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B639660720AFAFD500A98FC5"
+               BlueprintIdentifier = "B600772120B4774E00CABF38"
                BuildableName = "ios-pinterest-like-uiTests.xctest"
                BlueprintName = "ios-pinterest-like-uiTests"
                ReferencedContainer = "container:ios-pinterest-like-ui.xcodeproj">
